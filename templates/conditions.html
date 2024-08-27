@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conditional looping Statements</h1>
+    <!--
+    {% if a > 10 %}
+      <h2>{{a}} is greater than 10</h2>
+    {% endif %}
+    
+    {% if a > b %}
+      <h2>{{a}} is greater than {{b}}</h2>
+    {% else %}
+       <h2>{{b}} is greater than {{a}}</h2>
+    {% endif %}
+    
+    {% if a > b and a > c %}
+    <h2>a is greater than b,c</h2>
+    {% elif b > c %}
+    <h2>b is greater than c,a</h2>
+    {% else %}
+     <h2>c is greater than a,b</h2>
+    {% endif %} 
+    -->
+    {% if a > b %}
+      {% if a > c %}
+        <h2>a is greater</h2>
+      {% else %}
+        <h2>c is big</h2>
+      {% endif %}
+    {% else %}
+      {% if b > c %}
+        <h2>b is big</h2>
+      {% else %} 
+         <h2>c is big</h2>
+      {% endif %}
+    {% endif %}    
+
+</body>
+</html>
